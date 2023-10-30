@@ -2,10 +2,23 @@
 
 This is just a simple cart web app created with React, Tailwind CSS and Redux.
 
+## Tech Stack
+ - HTML.
+ - CSS.
+ - Tailwind CSS.
+ - JavaScript.
+ - React.
+ - React-Redux (For State Management).
+ - React Router Dom.
+ - React Loader Spinner.
+ - Axios.
 
 
-### Feature:
+
+## Feature:
  - Product Page.
+ - Loading UI untill the products are fetched.
+ - Lazy load product.
  - Cart Page.
   - Add to Cart.
   - Add to wishlist.
@@ -19,7 +32,7 @@ This is just a simple cart web app created with React, Tailwind CSS and Redux.
   - Add all wish list item to cart.
   - Show "Go to Cart" button in wishlist when a product is already in cart
 
-### Upcoming Feature
+## Upcoming Feature
  - Single Product Page
  - Variable Product
 
