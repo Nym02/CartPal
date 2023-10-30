@@ -133,7 +133,7 @@ const Index = () => {
                              
                                 <div class="border-t mt-8">
                                     <div class="flex font-semibold justify-between py-6 text-sm uppercase">
-                                        <span>Total cost</span>
+                                        <span className='font-bold'>Total cost:</span>
                                         <span>৳ {deliveryCharge + cartData.reduce((total, item) => total + (item?.price * item?.quantity), 0)}</span>
                                     </div>
                                     <button class="bg-indigo-500 font-semibold hover:bg-indigo-600 py-3 text-sm text-white uppercase w-full">Checkout</button>

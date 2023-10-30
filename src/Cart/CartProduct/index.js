@@ -53,6 +53,9 @@ const Index = ({ isWishlist }) => {
   const addWishlistItemsToCart =(products) => {
     dispatch(addWishlistItemIntoCart(products))
   }
+  const addSingleWishlistItemToCart = (item) => {
+    dispatch(setCartProducts(item));
+  }
 
   const removeFromWishlist = (item) => {
 
@@ -82,6 +85,7 @@ const Index = ({ isWishlist }) => {
             {
               isWishlist ?
                 cartData.length > 0 ? cartData.map((item) => {
+                  const inCart = cart?.cart.find(cartItem => cartItem?.id === item?.id)
                   return (
                     <div key={item?.id} className='mb-4 border-b-2 pb-4 last:border-b-0 first:pt-5'>
                       <div className='w-full h-full flex space-x-2'>
@@ -93,14 +97,22 @@ const Index = ({ isWishlist }) => {
                             <div>
                               <h3 className='font-semibold text-sm'>{item?.title}</h3>
                               <p className='text-sm text-gray-500'>{item?.category?.name}</p>
+                              
                             </div>
                             <div>
                               <p className='text-sm text-gray-500'>৳ {item?.price * item?.quantity}</p>
                             </div>
                           </div>
                           <div>
-                            <div className='h-full w-full flex justify-end items-end'>
+                            <div className='h-full w-full flex justify-between items-center'>
+                            <div className='w-full'>
 
+                                {
+                                  inCart ? <><Link to="/cart" className='text-xs font-medium px-2 py-1 border border-blue-400 rounded bg-green-500 hover:bg-green-600 text-white transition-all'>Go to Cart</Link></> : <><button onClick={()=> addSingleWishlistItemToCart(item)} className='text-xs font-medium px-2 py-1 border border-blue-400 rounded hover:bg-indigo-600 hover:text-white transition-all'>Add To Cart</button></>
+                                }
+
+                                
+                              </div>
                               <div onClick={() => removeFromWishlist(item)} className=''><svg className='w-4 h-4 stroke-red-700 cursor-pointer transform hover:scale-125 hover:stroke-slate-700 transition-all' xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
                               </svg>
@@ -199,7 +211,7 @@ const Index = ({ isWishlist }) => {
                 </div>
                 <p class="mt-0.5 text-sm text-gray-500">Shipping and taxes calculated at checkout.</p>
                 <div class="mt-6 flex space-x-1 w-full">
-                  <Link href="#" class="w-full flex items-center justify-center rounded-md border border-transparent bg-blue-800 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-blue-900">Go to Cart</Link>
+                  <Link to="/cart" class="w-full flex items-center justify-center rounded-md border border-transparent bg-blue-800 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-blue-900">Go to Cart</Link>
                   <Link href="#" class="w-full flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700">Checkout</Link>
                 </div>
                 <div class="mt-6 flex justify-center text-center text-sm text-gray-500">
