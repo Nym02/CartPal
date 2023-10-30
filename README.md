@@ -44,3 +44,20 @@ If you want to run this project in your local machine, Please follow these steps
 - In Terminal, write <code><i>npm install</i></code> (Wait untill all the packages are downloaded).
 - Write <code><i>npm start</i></code>.
 - It will open in your default browser.
+
+## UI Presentation
+
+### Product Page
+<img src="./public/assets/img/Products.png"  />
+
+### Cart Page with Order Summary
+<img src="./public/assets/img/CartPage.png"  />
+
+### Loading Product
+<img src="./public/assets/img/LoadingProducts.png"  />
+
+### Cart Sidebar
+<img src="./public/assets/img/CartSidebar.png"  >
+
+### Wishlist Sidebar
+<img src="./public/assets/img/WishlistSidebar.png"  >
