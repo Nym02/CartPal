@@ -48,7 +48,7 @@ If you want to run this project in your local machine, Please follow these steps
 
 
 
-## UI Presentation
+## UI Images
 
 ### Product Page
 <img src="./public/assets/img/Products.png"  />
