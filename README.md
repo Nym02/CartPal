@@ -1,6 +1,16 @@
 # CartPal - Your Friendly Cart Companion
 
-This is just a simple cart web app created with React, Tailwind CSS and Redux.
+CartPal: Your cart's best friend. Effortless shopping made simple.
+
+
+## Installation Guide
+If you want to run this project in your local machine, Please follow these steps. And please make sure that you have already setup your node and npm.
+
+- Clone this repo in your machine.
+- Open this project with VSCode/Terminal.
+- In Terminal, write <code><i>npm install</i></code> (Wait untill all the packages are downloaded).
+- Write <code><i>npm start</i></code>.
+- It will open in your default browser.
 
 ## Tech Stack
  - HTML.
@@ -36,14 +46,7 @@ This is just a simple cart web app created with React, Tailwind CSS and Redux.
  - Single Product Page
  - Variable Product
 
-## Installation Guide
-If you want to run this project in your local machine, Please follow these steps. And please make sure that you have already setup your node and npm.
 
-- Clone this repo in your machine.
-- Open this project with VSCode/Terminal.
-- In Terminal, write <code><i>npm install</i></code> (Wait untill all the packages are downloaded).
-- Write <code><i>npm start</i></code>.
-- It will open in your default browser.
 
 ## UI Presentation
 
