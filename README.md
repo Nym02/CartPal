@@ -1,7 +1,7 @@
 # CartPal - Your Friendly Cart Companion
 
-CartPal: Your cart's best friend. Effortless shopping made simple.
-Live: <a href="https://cart-pal.vercel.app/" target="_blank">https://cart-pal.vercel.app/</a>
+CartPal: Your cart's best friend. Effortless shopping made simple. <br/>
+Live: <a href="https://cart-pal.vercel.app/" target="_blank" >https://cart-pal.vercel.app/</a>
 
 
 ## Installation Guide
